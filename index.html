@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+
+    <title>CONVERSOR DE CORES</title>
+</head>
+<body>
+  <div>
+    <span>CONVERSOR DE CORES</span>
+  </div>
+  <hr>
+
+  <div class="rgb">
+    <div>
+      <h3>RGB</h3>
+      <span style="font-weight: bold;">OBS: Digite os números inteiros, separados por vírgula e sem caracteres especiais - ex: 1,2,3</span>
+    </div>
+    <div class="input">
+      <span>Digite a cor RGB:</span>
+      <input type="text" id="rgbValue"> 
+    </div>
+    <br>
+    <div>
+        <button onclick="convertHSV()">Converter RGB para HSV</button>
+        <div>
+          <span id="valueHSV"></span>
+        </div>
+    </div>
+    <br>
+    <div>
+      <button onclick="convertCMYK()">Converter RGB para CMYK</button>
+      <div>
+        <span id="valueCMYK"></span>
+      </div>
+    </div>
+    <br>
+    <div>
+      <button onclick="normalRGB()">Normalizar RGB</button>
+      <div>
+        <span id="normalRGB"></span>
+      </div>
+    </div>
+    <br>
+    <div>
+      <button onclick="grayRGB()">RGB para Escala de Cinza.</button>
+      <div>
+        <span id="grayRGB"></span>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="hsv">
+    <div>
+      <h3>HSV</h3>
+      <span style="font-weight: bold;">OBS: Digite os números inteiros, separados por vírgula e sem caracteres especiais - ex: 1,2,3</span>
+    </div>
+    <br>
+    <div class="input">
+      <span>Digite a cor HSV:</span>
+      <input type="text" id="hsvValue">
+    </div>
+    <br>
+    <div>
+      <button onclick="HSVconvertRGB()">Converter HSV para RGB</button>
+      <div>
+        <span id="HSVvalueRGB"></span>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="CMYK">
+    <div>
+      <h3>CMYK</h3>
+      <span style="font-weight: bold;">OBS: Digite os números inteiros, separados por vírgula e sem caracteres especiais - ex: 1,2,3,4</span>
+    </div>
+    <br>
+    <div class="input">
+      <span>Digite a cor CMYK:</span>
+      <input type="text" id="CMYKValue">
+    </div>
+    <br>
+    <div>
+      <button onclick="CMYKconvertRGB()">Converter CMYK para RGB</button>
+      <div>
+        <span id="CMYKvalueRGB"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

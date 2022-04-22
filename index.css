@@ -1,0 +1,23 @@
+#valueHSV {
+    visibility: hidden;
+}
+
+#valueCMYK {
+    visibility: hidden;
+}
+
+#normalRGB {
+    visibility: hidden;
+}
+
+#grayRGB {
+    visibility: hidden; 
+}
+
+#HSVvalueRGB {
+    visibility: hidden;
+}
+
+#CMYKvalueRGB {
+    visibility: hidden;
+}
